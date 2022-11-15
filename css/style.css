@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+    }
+
+/* Header */
+header {
+    display: inline-block;
+    height: 100px;
+    background-color: coral;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+.logo .redes {
+    height: 30px;
+    margin: 0px 2px 0px 5px;
+}
+
+.titulo {
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    display: block;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(0, 26, 48);
+    background-color: rgb(17, 213, 248);
+    padding: 5px; 
+    font-weight: 500;
+}
+nav {
+    font-size: 10px;
+    list-style: none;
+    margin: 10px 20px;
+}
