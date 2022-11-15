@@ -4,7 +4,9 @@
     box-sizing: border-box;
     
     }
-
+body {
+    background-color: cornflowerblue;
+}
 /* Header */
 header {
     display: inline-block;
@@ -35,6 +37,7 @@ header {
     align-items: center;
     font-size: 30px;
     display: block;
+    color: aquamarine;
     
 }
 
@@ -49,4 +52,94 @@ nav {
     font-size: 10px;
     list-style: none;
     margin: 10px 20px;
+}
+
+/* Inicio */
+
+.subtitulo {
+    display: block;
+}
+.subtitulo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: blueviolet;
+}
+.subtitulo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: darkviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.portada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portada img {
+    height: 250px;
+}
+.inicioimg {
+    display: grid;
+    align-items: center;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.inicioimg img {
+    height: 100px;
+    border: 3px solid black;
+}
+.abcd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Footer */
+
+footer {
+    display: grid;
+    height: 70px;
+    width: 100%;
+    bottom: 0%;
+    position: absolute;
+    background-color: coral;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.footitulo {
+    height: 20px;
+}
+.footitulo h3 {
+    color: aquamarine;
+}
+.fooconsulta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
+.fooimg { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+}
+.fooimg a {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer img {
+    height: 20px;
+    margin: 10px;
 }
