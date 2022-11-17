@@ -53,8 +53,7 @@ header {
 .menu a:hover {
     background-color:rgb(0, 26, 48); ;
     color: rgb(17, 213, 248);
-    height: 20px;
-    width: 20px;
+
 }
 nav {
     display: flex;
@@ -138,6 +137,7 @@ footer {
 }
 .footitulo h3 {
     color: aquamarine;
+    font-size: 17px;
 }
 .fooconsulta {
     display: flex;
