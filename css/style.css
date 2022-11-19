@@ -81,6 +81,14 @@ nav {
     color: blueviolet;
     background-color: beige;
 }
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2fr 1fr 1fr 1fr;
+}
+#main .subtitulos {
+    grid-column: 1/3;
+}
 main p {
     display: flex;
     align-items: center;
@@ -112,15 +120,16 @@ main p {
     gap: 1px;
     padding-bottom: 10px;
 }
-.inicioimg img {
+.abcd img {
     border: 3px solid black;
     height: 200px;
     width: 180px;
 }
-.abcd {
+#main .abcd {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 
    
 }
@@ -176,9 +185,9 @@ footer img {
 /* QUIENES SOMOS */
 .section {
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .quienesSomos {
@@ -192,10 +201,13 @@ footer img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1000px;
-    height: 200px;
+    width: 80%;
+    height: 300px;
     border: 5px solid greenyellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
 }
 
 #imagenes {
@@ -208,6 +220,8 @@ footer img {
 
 }
 .imagenes2 {
+    justify-self: center;
+    align-self: center;
     padding: 20px;
     width: 200px;
     
@@ -235,9 +249,6 @@ footer img {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 2.5%;
-    width: 95%;
-    height: 90%;
     align-items: center;
     justify-content: space-between;
 }
@@ -263,7 +274,7 @@ footer img {
 
 .coment-area p{
     position: relative;
-    padding: 0% 20%;
+    padding: 0%;
     margin-bottom: 10%;
     font-size: 20px;
 }
@@ -277,13 +288,12 @@ footer img {
     height: 30%;
 }
 .opciones1 h4{
-    padding-left: 15%;
     width: 100%;
     font-size: 20px;
     
 }
 
-.opciones2{
+.opciones2 {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -451,7 +461,9 @@ footer img {
     padding: 0px 20px;
 }
 
-@media (max-width: 414px) { 
+@media (min-width: 800px) {
+
+    /*Header*/
     header {
         display: grid;
         background-color: coral;
@@ -460,275 +472,13 @@ footer img {
         gap: 5px;
     }
     .logo {
-        width: 150px;
+        width: 400px;
         height: 100px;
         justify-content: space-evenly;
     }
     
     .logo img {
-        width: 150px;
-        height: 100px;
-    }
-    .redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .redes img{
-        height: 30px;
-        padding: 3px;
-    }
-    
-    .titulo {
-        font-family: sans-serif;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        color: aquamarine;
-        
-    }
-    
-    .menu a {
-        text-decoration: none;
-        color: rgb(0, 26, 48);
-        background-color: rgb(17, 213, 248);
-        padding: 5px; 
-        font-weight: 500;
-        transition: all 4ms;
-    }
-    .menu a:hover {
-        background-color:rgb(0, 26, 48); ;
-        color: rgb(17, 213, 248);
-    
-    }
-    nav {
-        font-size: 9px;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    
-    /* Cuerpo */
-    
-    .subtitulo {
-        display: block;
-    }
-    .subtitulo h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5px;
-        font-family: sans-serif;
-        font-weight: 900;
-        font-style: oblique;
-        color: blueviolet;
-        background-color: beige;
-    }
-    .subtitulo p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-        padding: 10px 10px 15px 10px;
-        font-size: 30px;
-        color: darkviolet;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .portada {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 400px;
-        padding-bottom: 10px;
-        
-    }
-    .portada img {
-        height: 400px;
-        width: 370px;
-        border: 2px solid black;
-    
-    }
-    .inicioimg {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 1px;
-        padding-bottom: 10px;
-    }
-    .inicioimg img {
-        border: 3px solid black;
-        height: 200px;
-        width: 180px;
-    }
-    .abcd {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-       
-    }
-    /* Footer */
-    
-    footer {
-        display: grid;
-        height: 70px;
-        width: 100%;
-        bottom: 0%;
-        padding-top: 5px;
-        position: static;
-        background-color: coral;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-    }
-    .footitulo {
-        height: 20px;
-    }
-    .footitulo h3 {
-        color: aquamarine;
-        font-size: 17px;
-    }
-    .fooconsulta {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 10px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 15px;
-    }
-    .fooimg { 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 10px;
-     }
-    .fooimg a {
-        color: black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        transition: all 4ms;
-     }
-    .fooimg a:hover {
-      color: white;
-     font-size: 20px;
-     background-color: black;
-    
-    }
-    footer img {
-     height: 20px;
-     margin: 10px;
-     }
-  /* Contacto */
-     #contacto {
-      padding: 50px 0px;
-     }
-    .formulario{
-     border: 7px solid rgb(107, 46, 221);
-     background-color: rgb(53, 141, 141);
-     display: flex;
-     flex-direction: column;
-     position: relative;
-     left: 2.5%;
-     width: 95%;
-     height: 90%;
-     align-items: center;
-     justify-content: space-between;
-     }
-    .formularioP {
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     font-size: 15px;
-     color: bisque;
-     }
-    .label{
-     display: flex;
-     flex-direction: row;
-     width:80%;
-     align-items: center;
-     justify-content:space-between;
-     margin-top: 3%;
-     }
-
-     .coment-area{
-     margin-top: 5%;
-     margin-bottom: 5%;
-
-    }
-
-     .coment-area p{
-     position: relative;
-     padding: 0% 20%;
-     margin-bottom: 10%;
-     font-size: 20px;
-    }
-
-     .opciones1{
-     width: 100%;
-     height: 30%;
-    }
-     .metodo {
-     width: 100%;
-     height: 30%;
-    }
-     .opciones1 h4{
-     padding-left: 15%;
-     width: 100%;
-     font-size: 20px;
-    
-    }
-
-     .opciones2{
-     display: flex;
-     justify-content: space-evenly;
-     width: 100%;
-     margin-top: 3%;
-     margin-bottom: 3%;
-    
-    }
-
-     .opcion{
-     display: flex;
-     justify-content: center;
-     width: 18%;
-    }
-
-     .opcion input{
-     margin-left: 0%;
-    }
-     .enviar {
-     padding-left: 40%;
-    }
-     .enviar input{
-     width: 40%;
-     height: 40%;
-     background-color: white;
-    }
-     .contactolog {
-     display: flex;
-     width: 100%;
-     padding-top: 10%;
-    }
-     .contactolog img {
-     width: 100%;
-     height: 70%;
-    }
-
-}
-
-@media ( max-width: 1200px ) {
-    header {
-        display: grid;
-        background-color: coral;
-        grid-template-columns: 1fr 2fr 1fr;
-        width: 100%;
-        gap: 5px;
-    }
-    .logo {
-        width: 200px;
-        height: 100px;
-        justify-content: space-evenly;
-    }
-    .logo img {
-        width: 150px;
+        width: 300px;
         height: 100px;
     }
     .redes {
@@ -740,21 +490,28 @@ footer img {
         height: 60px;
         padding: 10px;
     }
+    
     .titulo {
         font-family: sans-serif;
         justify-content: center;
         align-items: center;
         display: flex;
         color: aquamarine;
-        font-size: 20px;
+        width: 100%;
+        height: 100px
     }
+    .titulo h1 {
+        font-size: 50px ;
+    }
+    
     .menu a {
+        border: 2px solid black;
         text-decoration: none;
         color: rgb(0, 26, 48);
         background-color: rgb(17, 213, 248);
         padding: 5px; 
         font-weight: 500;
-        transition: all 10ms;
+        transition: all 4ms;
     }
     .menu a:hover {
         background-color:rgb(0, 26, 48); ;
@@ -762,338 +519,200 @@ footer img {
     
     }
     nav {
+        padding-top: 3px;
         font-size: 20px;
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 10px;
     
     }
-/* Cuerpo */
 
-    main {
+    /*Cuerpo*/
+
+    #main {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
     }
-     #main .subtitulos {
-        display: inline;
-        align-items: center;
-        justify-content: center;
+    #main .subtitulos {
         grid-column: 2/3;
-        grid-row:  1/4;
+        grid-row: 1/4;
     }
     .subtitulo {
         display: flex;
-    }
-    .subtitulo h2 {
-        display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 15px;
+    }
+    .subtitulo h2 {
+        font-size: 40px;
+        margin: 10px;
         font-family: sans-serif;
         font-weight: 900;
         font-style: oblique;
         color: blueviolet;
         background-color: beige;
-        width: 100%;
-        height: 50px;
-        font-size: 40px;
     }
-    .subtitulos p {
+    main p {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 60px;
         color: darkviolet;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }  
+    }
     .portada {
-        display: flex;
-    }
-    .portada img{
-        height: 400px;
-        width: 400px;
-    
-    }
-    .abcd img {
-        border: 3px solid black;
-        height: 300px;
-        width: 300px;
-    }
-    .abcd {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 700px;
+        padding-bottom: 10px;
+        
+    }
+    .portada img {
+        height: 700px;
+        width: 500px;
+        border: 2px solid black;
+    
+    }
+    .inicioimg {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px;
+        padding-bottom: 10px;
+    }
+    .abcd img {
+        border: 3px solid black;
+        height: 400px;
+        width: 300px;
+    }
+    #main .abcd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
     
        
     }
-/* Footer */
 
-     footer {
+    /* Footer*/
+    footer {
         display: grid;
-        height: 80px;
+        height: 100px;
         width: 100%;
         bottom: 0%;
         padding-top: 5px;
         position: static;
         background-color: coral;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
+        
     }
     .footitulo {
-        display: inline;
-        width: 100%;
-        height: 70px;
+        height: 20px;
+        align-self: center;
+        justify-self: center;
+
     }
     .footitulo h3 {
-        justify-content: center;
-        align-items: center;
+        color: aquamarine;
         font-size: 30px;
-        height: 70px;
-        width: 100%;
        
     }
     .fooconsulta {
-        display: flex;
-        width: 100%;
-        height: 70px;
-    }
-    .fooconsulta h4 {
-       font-size: 30px;
+        align-self: center;
+        height: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
     }
     .fooconsulta img { 
-      width: 30px;
-      height: 30px;
-     }
-    .fooconsulta a {
+        height: 30px;
+    }
+    .fooimg a {
         color: black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         transition: all 4ms;
+    }
+    .fooimg a:hover {
+        color: white;
         font-size: 20px;
-        align-items: center;
-        justify-content: center;
-     }
-    .fooconsulta a:hover {
-      color: white;
-     font-size: 20px;
-     background-color: black;
-    
-     }
-     /*Contacto*/
-     #contacto {
-        padding: 50px 0px;
-    }
-    .formulario{
-        border: 7px solid rgb(107, 46, 221);
-        background-color: rgb(53, 141, 141);
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 30%;
-        width: 800px;
-        height: 800px;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .formularioP {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 20px;
-        color: bisque;
-    }
-    .label{
-        display: flex;
-        flex-direction: row;
-        width:45%;
-        align-items: center;
-        justify-content:space-between;
-        margin-top: 3%;
-    }
-    
-    .coment-area{
-        margin-top: 3%;
-        margin-bottom: 3%;
-    }
-    
-    .coment-area p{
-        position: relative;
-        padding: 0% 25%;
-        margin-bottom: 3%;
-        font-size: 24px;
-    }
-    
-    .opciones1{
-        width: 70%;
-    }
-    
-    .opciones1 h4{
-        padding: 0% 25%;
-        width: 100%;
-        font-size: 20px;
-        
-    }
-    
-    .opciones2{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-        
-    }
-    
-    .opcion{
-        display: flex;
-        justify-content: center;
-        width: 18%;
-    }
-    
-    .opcion input{
-        margin-left: 0%;
-    }
-    
-    /*Quienes Somos*/
-    
-    .section {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: black;
     
     }
+    footer img {
+        height: 20px;
+        margin: 10px;
+    } 
+/* Contacto */
+#contacto {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.formulario{
+    border: 7px solid rgb(107, 46, 221);
+    background-color: rgb(53, 141, 141);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 800px;
+    height: 800px;
+    align-items: center;
+    justify-content: space-between;
+}
+.formularioP {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: bisque;
+}
+.label{
+    display: flex;
+    flex-direction: row;
+    width:45%;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 3%;
+}
+
+.coment-area{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.coment-area p{
+    position: relative;
+    padding: 0% 25%;
+    margin-bottom: 3%;
+    font-size: 24px;
+}
+
+.opciones1{
+    width: 70%;
+}
+
+.opciones1 h4{
+    padding: 0% 25%;
+    width: 100%;
+    font-size: 20px;
     
-    .quienesSomos {
-        flex-direction: column;
-    }
+}
+
+.opciones2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     
-    .texto {
-        background-color: aqua;
-        font-size: 30px;
-        padding: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 1000px;
-        height: 200px;
-        border: 5px solid greenyellow;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    #imagenes {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 200px;
-        flex-direction: row;
-    
-    }
-    .imagenes2 {
-        padding: 20px;
-        width: 200px;
-        
-    }
-    .imagenes2 img {
-        width: 200px;
-        height: auto;
-        border: 5px solid greenyellow;
-    }
-    .imagenes2 p {
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        
-    }
-    
-    /* Animaciones */
-    
-    .animacionesParrafo {
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    
-    .animacionesP {
-        background-color: rgb(160, 45, 93);
-        font-size: 30px;
-        padding: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 900px;
-        height: 200px;
-        border: 5px solid rgb(233, 64, 210);
-        font-family: fantasy;
-    }
-    
-    .animacionesImagenes {
-        padding: 10px;
-        justify-content: center;
-        align-items: center;    
-    }
-    
-    
-    .imagenesA {
-        padding: 5px;
-        display: flex;
-        width: 100%;
-        height: auto;
-        border: 7px solid plum;
-        gap: 100px;
-        
-    }
-    .imagenesB {
-        padding: 5px;
-        display: flex;
-        width: 100%;
-        height: auto;
-        border: 7px solid plum;
-        gap: 100px;
-    }
-    .imagenesC {
-        padding: 5px;
-        display: flex;
-        width: 100%;
-        height: auto;
-        border: 7px solid plum;
-        gap: 100px;
-    }
-    
-    .imagenesA img {
-        width: 100px;
-        height: auto;
-        border-radius: 7px;
-        border: 3px solid rgb(103, 255, 222);
-    
-    }
-    
-    .imagenesB img {
-        width: 100px;
-        height: auto;
-        border-radius: 7px;
-        border: 3px solid rgb(103, 255, 222);
-    }
-    .imagenesC img {
-        width: 100px;
-        height: auto;
-        border-radius: 7px;
-        border: 3px solid rgb(103, 255, 222);
-    }
-    .tituloFulano {
-        padding: 10px 0px;
-        display: flex;
-        justify-content: center;
-        
-    }
-    .tituloFulano p {
-        padding: 2px 15px;
-        background-color: bisque;
-        font-size: 30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+}
+
+.opcion{
+    display: flex;
+    justify-content: center;
+    width: 18%;
+}
+
+.opcion input{
+    margin-left: 0%;
+}
+
 }
