@@ -127,6 +127,7 @@ footer {
     display: grid;
     height: 70px;
     width: 100%;
+    bottom: 0%;
     position: absolute;
     background-color: coral;
     grid-template-columns: auto;
@@ -169,18 +170,55 @@ footer img {
     margin: 10px;
 }
 /* QUIENES SOMOS */
+.section {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.quienessomos {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-rows: 1fr;
+.quienesSomos {
+    flex-direction: column;
 }
-.quienessomosp p {
-    background-color: rgb(245, 116, 116);
+
+.texto {
+    background-color: aqua;
+    font-size: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 200px;
+    border: 5px solid greenyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.quienessomosimg img{
-    height: 100%;
-    width: 100%;
+
+#imagenes {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    flex-direction: row;
+
+}
+.imagenes2 {
+    padding: 20px;
+    width: 200px;
+    
+}
+.imagenes2 img {
+    width: 200px;
+    height: auto;
+    border: 5px solid greenyellow;
+}
+.imagenes2 p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 /* Contacto */
@@ -266,4 +304,145 @@ footer img {
     width: 40%;
     height: 40%;
      background-color: white;
+}
+.contactolog {
+    display: flex;
+    width: 100%;
+    padding-top: 10%;
+}
+.contactolog img {
+    width: 100%;
+    height: 70%;
+}
+/* Animaciones */
+
+.animacionesParrafo {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.animacionesP {
+    background-color: rgb(160, 45, 93);
+    font-size: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 200px;
+    border: 5px solid rgb(233, 64, 210);
+    font-family: fantasy;
+}
+
+.animacionesImagenes {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.imagenesA {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 7px solid plum;
+    gap: 100px;
+    
+}
+.imagenesB {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 7px solid plum;
+    gap: 100px;
+}
+.imagenesC {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 7px solid plum;
+    gap: 100px;
+}
+
+.imagenesA img {
+    width: 100px;
+    height: auto;
+    border-radius: 7px;
+    border: 3px solid rgb(103, 255, 222);
+
+}
+
+.imagenesB img {
+    width: 100px;
+    height: auto;
+    border-radius: 7px;
+    border: 3px solid rgb(103, 255, 222);
+}
+.imagenesC img {
+    width: 100px;
+    height: auto;
+    border-radius: 7px;
+    border: 3px solid rgb(103, 255, 222);
+}
+.tituloFulano {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+.tituloFulano p {
+    padding: 2px 15px;
+    background-color: bisque;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Juegos*/
+
+
+.cuerpoJuegos {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.juego1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: px;
+    width: 1500px;
+    height: 450px;
+    border: 10px rgb(248, 69, 69);
+    border-style: groove;
+    gap: 50px;
+    
+}
+.juego1 img {
+    width: 400px;
+    height: auto;
+    border-radius: 7px;
+    border: 3px solid rgb(103, 255, 222);
+}
+.tituloJuegos {
+
+    width: 500px;
+    height: 60px;
+    padding: 10px 100px;
+    background-color: rgb(112, 62, 1);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.tituloJuegos p{
+    padding: 0px 20px;
 }
