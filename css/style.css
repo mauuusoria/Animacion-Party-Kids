@@ -9,35 +9,37 @@ body {
 }
 /* Header */
 header {
-    display: inline-block;
-    height: 100px;
-    width: 100%;
+    display: grid;
     background-color: coral;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    gap: 5px;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    width: 150px;
+    height: 100px;
+    justify-content: space-evenly;
 }
 
 .logo img {
-    height: 70px;
-    margin-right: 10px;
+    width: 150px;
+    height: 100px;
 }
-.logo .redes {
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes img{
     height: 30px;
-    margin: 0px 2px 0px 5px;
+    padding: 3px;
 }
 
 .titulo {
     font-family: sans-serif;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    display: block;
+    display: flex;
     color: aquamarine;
     
 }
@@ -56,12 +58,12 @@ header {
 
 }
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 9px;
     list-style: none;
-    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* Cuerpo */
@@ -99,7 +101,7 @@ nav {
 }
 .portada img {
     height: 400px;
-    width: 390px;
+    width: 370px;
     border: 2px solid black;
 
 }
@@ -112,7 +114,7 @@ nav {
 .inicioimg img {
     border: 3px solid black;
     height: 200px;
-    width: 195px;
+    width: 185px;
 }
 .abcd {
     display: flex;
@@ -128,7 +130,8 @@ footer {
     height: 70px;
     width: 100%;
     bottom: 0%;
-    position: absolute;
+    padding-top: 5px;
+    position: static;
     background-color: coral;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
