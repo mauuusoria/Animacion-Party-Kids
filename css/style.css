@@ -68,7 +68,7 @@ header {
     display: flex;
     
 }
-nav {
+.menu {
     width: 100vw;
     align-items: center;
     justify-content: center;
