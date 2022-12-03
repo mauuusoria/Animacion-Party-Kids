@@ -58,7 +58,7 @@ header {
 
 }
 nav {
-    font-size: 20px;
+    font-size: 10px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -196,16 +196,17 @@ footer img {
 
 .texto {
     background-color: aqua;
-    font-size: 40px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 90%;
+    height: 80%;
     border: 5px solid greenyellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-self: center;
     align-self: center;
+    padding: 10px;
 }
 
 #imagenes {
@@ -225,12 +226,12 @@ footer img {
     
 }
 .imagenes2 img {
-    width: 500px;
+    width: 250px;
     height: auto;
     border: 5px solid greenyellow;
 }
 .imagenes2 p {
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -444,7 +445,7 @@ footer img {
 }
 .juego1 img {
     display: flex;
-    width: 400px;
+    width: 350px;
     height: auto;
     border-radius: 15px;
     border: 3px solid rgb(103, 255, 222);
@@ -452,7 +453,7 @@ footer img {
 .tituloJuegos {
     justify-self: center;
     display: flex;
-    width: 70%;
+    width: 80%;
     height: 60px;
     margin: 10px;
     padding: 10px;
