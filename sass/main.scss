@@ -18,20 +18,21 @@ header {
     width: 150px;
     height: 100px;
     justify-content: space-evenly;
+      img {
+         width: 150px;
+         height: 100px;
     }
-    .logo img {
-        width: 150px;
-    height: 100px;
     }
     .redes {
         display: flex;
         justify-content: center;
         align-items: center;
+        img {
+            height: 30px;
+            padding: 3px;
+        }
     }
-    .redes img {
-        height: 30px;
-        padding: 3px;
-    }
+    
 }
 .navbar {
     display: flex;
@@ -42,20 +43,19 @@ header {
         font-size: 10px;
         list-style: none;
         display: flex;
-    }
-    .menu a {
-        text-decoration: none;
-        color: rgb(0, 26, 48);
-        background-color: rgb(17, 213, 248);
-        padding: 5px;
-        font-weight: 500;
-        transition: all 4ms;
-    }
-    .menu a:hover {
-        background-color: rgb(0, 26, 48);
-        ;
-        color: rgb(17, 213, 248);
-    
+        a {
+            text-decoration: none;
+            color: rgb(0, 26, 48);
+            background-color: rgb(17, 213, 248);
+            padding: 5px;
+            font-weight: 500;
+            transition: all 4ms;
+         }
+         a:hover {
+            background-color: rgb(0, 26, 48);
+            ;
+            color: rgb(17, 213, 248);
+        }
     }
 }
 /* INICIO */
@@ -64,24 +64,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 2fr 1fr 1fr 1fr;
-    .subtitulo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .subtitulo h2 {
-        margin: 5px;
-        font-family: sans-serif;
-        font-weight: 900;
-        font-style: oblique;
-        color: blueviolet;
-        background-color: beige;
-    }
-    .subtitulos {
-        grid-column: 1/3;
-    }
-    
-    main p {
+    p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,23 +74,34 @@ header {
         color: darkviolet;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    
+    .subtitulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            margin: 5px;
+            font-family: sans-serif;
+            font-weight: 900;
+            font-style: oblique;
+            color: blueviolet;
+            background-color: beige;
+        }
+    }
+    .subtitulos {
+        grid-column: 1/3;
+    }
     .portada {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 400px;
         padding-bottom: 10px;
-    
+        img {
+            height: 400px;
+            width: 370px;
+            border: 2px solid black;
+        }
     }
-    
-    .portada img {
-        height: 400px;
-        width: 370px;
-        border: 2px solid black;
-    
-    }
-    
     .inicioimg {
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -115,18 +109,16 @@ header {
         gap: 1px;
         padding-bottom: 10px;
     }
-    
-    .abcd img {
-        border: 3px solid black;
-        height: 200px;
-        width: 180px;
-    }
-    
-    #main .abcd {
+    .abcd {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-bottom: 10px;
+        img {
+            border: 3px solid black;
+            height: 200px;
+            width: 180px;
+        }
     }
 }
 /* FOOTER */
@@ -142,13 +134,11 @@ footer {
     grid-template-rows: auto auto;
     .footitulo {
         height: 20px;
+        h3 {
+            color: aquamarine;
+            font-size: 15px;
     }
-    
-    .footitulo h3 {
-        color: aquamarine;
-        font-size: 15px;
     }
-    
     .fooconsulta {
         display: flex;
         align-items: center;
@@ -156,31 +146,24 @@ footer {
         height: 10px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 15px;
-    }
-    
-    .fooconsulta img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20px;
-    }
-    
-    .fooconsulta a {
-        color: black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        transition: all 4ms;
-    }
-    
-    .fooconsulta a:hover {
-        color: white;
-        font-size: 20px;
-        background-color: black;
-    
-    }
-    
-    footer img {
-        height: 20px;
-        margin: 10px;
+        img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            margin: 10px;
+        }
+        a {
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 4ms;
+        }
+        a:hover {
+            color: white;
+            font-size: 20px;
+            background-color: black;
+        
+        }
     }
 }
 /* QUIENES SOMOS */
@@ -188,7 +171,7 @@ footer {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     .texto {
         background-color: aqua;
         font-size: 20px;
@@ -208,20 +191,20 @@ footer {
         align-self: center;
         padding: 20px;
         width: 70%;
-    }
-    .imagenes2 img {
-        width: 250px;
-        height: auto;
-        border: 5px solid greenyellow;
-    }
-    .imagenes2 p {
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: tomato;
-        color: blueviolet;
-        border-radius: 20px;
+        img {
+            width: 250px;
+            height: auto;
+            border: 5px solid greenyellow;
+        }
+        p {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: tomato;
+            color: blueviolet;
+            border-radius: 20px;
+        }
     }
 }
 /* CONTACTO */
@@ -252,24 +235,24 @@ footer {
     .coment-area {
         margin-top: 5%;
         margin-bottom: 5%;
-    }
-    .coment-area p {
-        position: relative;
-        padding: 0%;
-        margin-bottom: 10%;
-        font-size: 20px;
+        p {
+            position: relative;
+            padding: 0%;
+            margin-bottom: 10%;
+            font-size: 20px;
+        }
     }
     .opciones1 {
         width: 100%;
         height: 30%;
+        h4 {
+            width: 100%;
+            font-size: 20px;
+        }
     }
     .metodo {
         width: 100%;
         height: 30%;
-    }
-    .opciones1 h4 {
-        width: 100%;
-        font-size: 20px;
     }
     .opciones2 {
         display: flex;
@@ -288,20 +271,20 @@ footer {
     }
     .enviar {
         padding-left: 40%;
-    }
-    .enviar input {
-        width: 40%;
-        height: 40%;
-        background-color: white;
+        input {
+            width: 40%;
+            height: 40%;
+            background-color: white;
+        }
     }
     .contactolog {
         display: flex;
         width: 100%;
         padding-top: 10%;
-    }
-    .contactolog img {
-        width: 100%;
-        height: 70%;
+        img {
+            width: 100%;
+            height: 70%;
+        }
     }
 }
 /* ANIMACIONES */
@@ -323,64 +306,16 @@ footer {
         border: 5px solid rgb(233, 64, 210);
         font-family: fantasy;
     }
-    .animacionesImagenes {
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-    .imagenesA {
-        padding: 5px;
-        display: flex;
-        width: 100%;
-        height: auto;
-        border: 7px solid plum;
-        gap: 100px;
-    
-    }
-    .imagenesB {
-        padding: 5px;
-        display: flex;
-        width: 100%;
-        height: auto;
-        border: 7px solid plum;
-        gap: 100px;
-    }
-    .imagenesC {
-        padding: 5px;
-        display: flex;
-        width: 100%;
-        height: auto;
-        border: 7px solid plum;
-        gap: 100px;
-    }
-    .imagenesA img {
-        width: 100px;
-        height: auto;
-        border-radius: 7px;
-        border: 3px solid rgb(103, 255, 222);
-    }
-    .imagenesB img {
-        width: 100px;
-        height: auto;
-        border-radius: 7px;
-        border: 3px solid rgb(103, 255, 222);
-    }
-    .imagenesC img {
-        width: 100px;
-        height: auto;
-        border-radius: 7px;
-        border: 3px solid rgb(103, 255, 222);
-    }
     .tituloFulano {
         padding: 10px 0px;
         display: flex;
         justify-content: center;
-    }
-    .tituloFulano p {
-        padding: 2px 15px;
-        background-color: bisque;
-        font-size: 30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        p {
+            padding: 2px 15px;
+            background-color: bisque;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
     }
 }
 /* JUEGOS */
@@ -400,14 +335,14 @@ footer {
         border: 10px rgb(248, 69, 69);
         border-style: groove;
         gap: 20px;
-    }
-    .juego1 img {
-        display: flex;
-        width: 350px;
-        height: auto;
-        border-radius: 15px;
-        border: 3px solid rgb(103, 255, 222);
-    }
+        img {
+            display: flex;
+            width: 350px;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid rgb(103, 255, 222);
+        }
+    } 
     .tituloJuegos {
         justify-self: center;
         display: flex;
@@ -419,8 +354,359 @@ footer {
         font-size: 25px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         border-radius: 20px;
+        p {
+            padding: 0px 20px;
+        }
     }
-    .tituloJuegos p {
-        padding: 0px 20px;
+}
+@media (min-width: 800px) {
+
+    /*Header*/
+    header {
+        display: grid;
+        background-color: coral;
+        grid-template-columns: 1fr 2fr 1fr;
+        width: 100%;
+        gap: 5px;
+        .logo {
+            width: 400px;
+            height: 100px;
+            justify-content: space-evenly;
+            img {
+                width: 300px;
+                height: 100px;
+            }
+        }
+        .redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 60px;
+                padding: 10px;
+            }
+        }
+        .titulo {
+            font-family: sans-serif;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: aquamarine;
+            width: 100%;
+            height: 100px
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .navbar {
+            display: flex;
+            .menu {
+                padding-top: 3px;
+                font-size: 0px;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    border: 2px solid black;
+                    text-decoration: none;
+                    color: rgb(0, 26, 48);
+                    background-color: rgb(17, 213, 248);
+                    padding: 5px;
+                    font-weight: 700;
+                    transition: all 4ms;
+                    width: 50%;
+                }
+                a:hover {
+                    background-color: rgb(0, 26, 48);
+                    ;
+                    color: rgb(17, 213, 248);
+                }
+            }
+        }
+    }
+    /*Cuerpo*/
+
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
+        .subtitulos {
+            grid-column: 2/3;
+            grid-row: 1/4;
+        }
+        .subtitulo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: 40px;
+                margin: 10px;
+                font-family: sans-serif;
+                font-weight: 900;
+                font-style: oblique;
+                color: blueviolet;
+                background-color: beige;
+            }
+        }
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: darkviolet;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .portada {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 700px;
+            padding-bottom: 10px;
+            img {
+                height: 700px;
+                width: 500px;
+                border: 2px solid black;
+            }
+        }
+        .abcd {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 10px;
+            img {
+                border: 3px solid black;
+                height: 400px;
+                width: 300px;
+            }
+        }
+        .inicioimg {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1px;
+            padding-bottom: 10px;
+        }
+    }
+    /* Footer*/
+    footer {
+        display: grid;
+        height: 100px;
+        width: 100%;
+        bottom: 0%;
+        padding-top: 5px;
+        position: static;
+        background-color: coral;
+        grid-template-columns: 2fr 1fr;
+        .footitulo {
+            height: 20px;
+            align-self: center;
+            justify-self: center;
+            h3 {
+                color: aquamarine;
+                font-size: 30px;
+            }
+            img {
+                height: 30px;
+            }
+        }
+        .fooconsulta {
+            align-self: center;
+            height: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            a {
+                color: black;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                transition: all 4ms;
+            }
+            a:hover {
+                color: white;
+                font-size: 20px;
+                background-color: black;
+            }
+        }
+        footer img {
+            height: 20px;
+            margin: 10px;
+        }
+    }
+    /* Contacto */
+    #contacto {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .formulario {
+            border: 7px solid rgb(107, 46, 221);
+            background-color: rgb(53, 141, 141);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 50%;
+            margin-left: 30%;
+        }
+        .formularioP {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            color: bisque;
+        }
+        .label {
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+        .coment-area {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            p {
+                position: relative;
+                padding: 0% 25%;
+                margin-bottom: 3%;
+                font-size: 24px;
+            }
+        }
+        .opciones1 {
+            width: 70%;
+            h4 {
+                padding: 0% 25%;
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        .opciones2 {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        .opcion {
+            display: flex;
+            justify-content: center;
+            width: 18%;
+            input {
+                margin-left: 0%;
+            }
+        }
+        .contactolog {
+            padding: 10%;
+        }
+    }
+    /* Quienes Somos */
+    .section {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        .texto {
+            background-color: aqua;
+            font-size: 30px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 300px;
+            border: 5px solid greenyellow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            grid-column: 1/4;
+            justify-self: center;
+            align-self: center;
+        }
+        .imagenes2 {
+            justify-self: center;
+            align-self: center;
+            padding: 20px;
+            width: 200px;
+            img {
+                width: 200px;
+                height: auto;
+                border: 5px solid greenyellow;
+            }
+            p {
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+    }
+    /* Animaciones */
+
+    .animacionesParrafo {
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        .animacionesP {
+            background-color: rgb(160, 45, 93);
+            font-size: 30px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 300px;
+            border: 5px solid rgb(233, 64, 210);
+            font-family: fantasy;
+        }
+        .animacionesImagenes {
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .tituloFulano {
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            p {
+                padding: 2px 15px;
+                background-color: bisque;
+                font-size: 30px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+    }
+    /* Juegos*/
+
+    .cuerpoJuegos {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0px;
+        justify-content: center;
+        align-items: center;
+        .juego1 {
+            display: flex;
+            padding: 10px;
+            width: 80%;
+            height: 20%;
+            border: 10px rgb(248, 69, 69);
+            border-style: groove;
+            gap: 50px;
+            img {
+                justify-content: center;
+                align-items: center;
+                width: 400px;
+                height: auto;
+                border-radius: 7px;
+                border: 3px solid rgb(103, 255, 222);
+            }
+        }
+        .tituloJuegos {
+
+            width: 500px;
+            height: 60px;
+            padding: 10px 100px;
+            background-color: rgb(215, 228, 31);
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            p {
+                padding: 0px 20px;
+            }
+        }
     }
 }
